@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/*Header section*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #2d545e;
+}
+
+.nav {
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.nav .brand-name {
+    font-size: 50px;
+    margin: 9px 0 0;
+    line-height: 68px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav .main-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0 0;
+    line-height: 68px;
+}
+
+.main-nav li {
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.three {
+    font-size: 80px;
+}
+
+.leaf {
+    margin-bottom: 100px;
+    position: absolute;
+}
+
+.section-header {
+    font-size: 20px;
+}
+
+/*Cart section*/
+.shop-items {
+    width: 195px;
+    padding: 10px;
+}
+
+.shop-item-title {
+    position: absolute;
+    margin-bottom: 30px;
+}
+
+.shop-item-image {
+    padding: 25px 0px;
+}
+
+.shop-item-details {
+    margin: 0px 0px 10px 0px;
+    padding: 0px 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-items .shop-item-image {
+    width: 195px;
+    height: 150px;
+}
+
+/*Styling the heart*/
+.fas {
+    margin: -3px -3px;
+}
+
+.heart {
+    margin: 0px 18px;
+    font-size: 22px;
+    border-radius: 10px;
+    width: 2.2rem;
+    color: gray;
+    background-color: transparent;
+    transition: transform 50ms;
+    border: none;
+}
+
+.heart:active {
+    transform: translateY(0.1rem);
+}
+
+/*Button styles*/
+.btn {
+    background-color: #478559;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 300;
+    padding: 9px 0px;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #ff414e;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 400;
+    position: absolute;
+    padding: 6px 9px;
+    margin-left: 10px;
+    
+}
+
+/*Item price*/
+.shop-item-price {
+    margin: 0px -7px;
+    padding: 0px 5px;
+}
+
+/*Dividing the items*/
+.group-them {
+    display: grid;
+    grid-template-columns: 30% 30% 33%;
+    margin: 90px 0px;
+}
+
+.one {
+    margin: 0px 100px;
+    max-width: 1025px;
+    padding: 0px 100px;
+}
+
+.one-a {
+    padding: 0px 40px;
+    margin: 0px 5px;
+}
+
+.two {
+    padding: 0px 60px;
+    margin: 0px 10px;
+}
+
+/* styling cart secton*/
+#art {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.cart-design {
+    padding: 0px 5px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    padding: 0px 50px;
+}
+
+.last {
+    margin: 40px;
+    
+}
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 30px;
+}
+
+.btn-purchase {
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    margin: 25px 75px;
+    border-radius: 5px;
+    background-color: #004e7c;
+    font-size: 19px;
+    color: #fff;
+}
+
+.cart-items .cart-column{
+    margin-top: 20px
+}
+
+.class-item-title {
+    position: absolute;
+    margin: -20px -60px;
+}
+
+.cart-price {
+    position: absolute;
+    margin: -50px 120px; 
+}
+
+.cart-quantity {
+    position: absolute;
+    margin: -50px 190px; 
+}
+
+.cart-quantity .cart-input {
+    width: 40px;
+    margin-left: 40px;
+}
+
+.total-title {
+    margin: 0px 10px;
+}
+
+/*Home page img*/
+.main-page img {
+    margin: 10px 2px;
+    width: 1345px;
+    height: 630px; 
+}
+
+.main-page-inner {
+    padding: 48px 40px 3.125em 3.125em;
+    background: #fff;
+    margin: -13em 3em;
+}
+
+.main-page-inner a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    font-size: 19px;
+    color: #fff;
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+
