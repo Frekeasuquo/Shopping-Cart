@@ -91,25 +91,42 @@ header {
     height: 150px;
 }
 
-/*Styling the heart*/
+/*Styling the heart-shape*/
 .fas {
     margin: -3px -3px;
 }
 
 .heart {
     margin: 0px 18px;
-    font-size: 22px;
-    border-radius: 10px;
+    font-size: 20px;
+    border-radius: 15px;
     width: 2.2rem;
     color: gray;
     background-color: transparent;
     transition: transform 50ms;
-    border: none;
+    border: 0.1px solid;
+}
+
+.heart:hover {
+    font-size: 24px;
+    color: gray;
 }
 
 .heart:active {
     transform: translateY(0.1rem);
 }
+
+.small {
+    color: red;
+    margin: 0px 18px;
+    font-size: 20px;
+    width: 2.2rem;
+    background-color: transparent;
+    transition: transform 50ms;
+    border: 0.1px solid gray;
+    border-radius: 15px;
+}
+
 
 /*Button styles*/
 .btn {

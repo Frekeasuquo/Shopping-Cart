@@ -18,61 +18,18 @@ for (let i = 0; i < addToCartButton.length; i++) {
 
 document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 
-let hearts = document.getElementById('shape')
-let hat = document.getElementById('add')
-let hard = document.getElementById('sub')
-let hrd = document.getElementById('div')
-let hea = document.getElementById('mul')
-let head = document.getElementById('mulp')
-
-
-function clickMe() {
-    if (hearts.style.color =="red") {
-        hearts.style.color = "gray"
-    } else {
-        hearts.style.color = "red"
-    }
+const hearts = document.querySelectorAll('.heart');
+let classObj = {
+    heart: 'small',
+    small: 'heart'
 }
 
-function clickOn() {
-    if (hat.style.color =="red") {
-        hat.style.color = "gray"
-    } else {
-        hat.style.color = "red"
-    }
-}
+hearts.forEach(heart => {
+    heart.addEventListener('click', ()=> {
+        heart.classList = classObj[heart.classList[0]];
+    })
+});
 
-function clickOff() {
-    if (hard.style.color =="red") {
-        hard.style.color = "gray"
-    } else {
-        hard.style.color = "red"
-    }
-}
-
-function clickNow() {
-    if (hrd.style.color =="red") {
-        hrd.style.color = "gray"
-    } else {
-        hrd.style.color = "red"
-    }
-}
-
-function clickNo() {
-    if (hea.style.color =="red") {
-        hea.style.color = "gray"
-    } else {
-        hea.style.color = "red"
-    }
-}
-
-function clickWo() {
-    if (head.style.color =="red") {
-        head.style.color = "gray"
-    } else {
-        head.style.color = "red"
-    }
-}
 
 
 function purchaseClicked() {
